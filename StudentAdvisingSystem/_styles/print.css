@@ -1,0 +1,8 @@
+#bannerprint {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#skip, #skip a, #skip img, .noprint, #mainidbanner{
+	display: none;
+}

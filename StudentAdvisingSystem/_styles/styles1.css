@@ -1,0 +1,400 @@
+/* CSS Document */
+
+a img {
+	border: 0px;
+}
+
+a:link	{
+	color: #900; 
+	text-decoration: underline;		
+}
+
+a:visited {
+	color: #666;
+}
+
+a:hover, a:visited:hover {
+	color: #c90; 
+	text-decoration: underline;
+}
+
+#headerlinks a {
+	text-decoration:none;
+}
+	
+#bannerprint {
+	display:none;
+}
+
+body {
+	background-color: #ccc;
+	background-image:  url(../images/background1.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#empty {
+	position:relative;
+}
+
+
+/*************************** PAGE FOOTER STYLES *****************************/
+
+#footer {
+	position: relative;
+	width: 100%;
+	z-index: 400;
+	background:#800000;
+	border-top-style:solid;
+	border: 1px;
+}
+
+#footeraddress {
+	margin-left: 165px;
+	color:#FFFFFF;
+}
+
+#footerbtmnav {
+	background-image: url(../images/bgFooter.jpg);
+	background-repeat: repeat-x;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	font-size: 10px;
+	font-weight: normal;
+	height: 25px;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 0px 5px 0px 10px;
+}
+
+/*************************** END PAGE FOOTER STYLES *****************************/
+
+h1, h2, h3, h4, h5 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}		
+
+h1	{
+	color: #375288;
+	font-size: 20px;
+	font-weight: lighter;
+	padding-top: 10px;
+}
+
+h2	{
+	color: #003366;
+	font-size: 18px;
+	font-weight: lighter;
+	padding-top:5px;
+	margin-bottom:0px;
+}
+
+h3	{
+	color: #880000;
+	font-size: 16px;
+	font-weight: lighter;
+	padding-top:5px;
+	margin-bottom:0px;
+}
+
+h4	{
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-top: 4px;
+	text-transform: uppercase;
+}
+	
+h5	{
+	color: #666;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 15px;
+	padding: 4px 10px 0px 0px;
+}
+
+/******************************** PAGE HEADER STYLES ***********************************/
+
+#headerchicologo {
+	background-color: #FFFFFF;
+	background-image: url(../images/headerBg.gif);
+	background-position: top;
+	background-repeat: repeat-x;	
+}
+
+#headerbanner {
+	background-image:   url(../images/genericBanner.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	min-width: 500px;
+}
+
+#headerbanner1 {
+	background-image:   url(../images/student_advising.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	min-width: 500px;
+}
+
+#headerbanner2 {
+	background-image:   url(../images/student_advising2.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	min-width: 500px;
+}
+
+/****************************** END PAGE HEADER STYLES **********************************/
+
+/****************************** MAIN CONTENT AREA OF PAGE STYLES **********************************/
+
+#main {
+	/*background-image:  url(../images/ltBg.jpg);*/
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	/*border-left: 1px solid #999;
+	border-right: 1px solid #999;*/
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #main {
+	background-position: 1px 0px;
+}
+/* End */
+
+
+#mainbottombg { /* the sole purpose of this is to place the image at the bottom left of the menu */
+	/*background-image:  url(../images/ltBg2.gif);*/
+	background-position: left bottom; 
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+#mainempty {
+	/* in case the content doesn't streatch below the nav or sidebar */
+	clear:both;
+}
+
+	/****************************** MAIN FEATURE AREA OF PAGE STYLES **********************************/
+	
+	#mainfeature {
+		background-image:   url(../images/featureBorder.jpg);
+		background-repeat: no-repeat;
+		background-position: 0px 30px;
+		top: 0px;
+		float:right;
+		margin: 0px;
+		padding: 10px 14px 0px 18px;
+		width: 180px;
+	}
+	
+	/* IE7 Fix */
+	  *:first-child+html #mainfeature {
+	  	padding-top: 25px;
+	}
+	
+	/* Fix IE. Hide from IE Mac \*/
+	* html #mainfeature {
+		padding-top: 19px;
+	}
+	/* End */
+	
+	#mainfeature h4 {
+		margin-bottom: 0px;
+	}
+	
+	#mainfeature img {
+		float:right;
+		padding: 5px 0px 0px 5px;
+	}
+	
+	#mainfeature p {
+		margin-top: 2px;
+	}
+	
+	/******************************* END MAIN FEATURE AREA OF PAGE STYLES **********************************/
+
+#maingap {
+	background-color: #FFF;
+	background-image:   url(../images/gap.gif);
+	background-repeat: repeat-x;
+	height: 2px;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #maingap {
+	position:relative;
+	top: -3px; 
+}
+/* End */
+
+	/****************************** MAINHOMECONTENT AREA OF PAGE STYLES **********************************/
+	
+	#mainhomecontent {
+		margin: 0px 205px 0px 20px; /* negative margin for IE Mac */
+		padding: 0px 10px 10px 0px;
+		position:relative;
+		top: 5px; 
+		z-index: 0;
+		width: 710px; /*668px;*/
+		height: auto;
+}
+	
+	  *:first-child+html  #mainhomecontent {
+	  	margin-top: -28px;
+	}
+	
+	/* Fix IE. Hide from IE Mac \*/
+	* html #mainhomecontent {
+		margin: 20px 205px 0px 20px;
+		top: 0px;
+	}
+	/* End */
+	
+	#mainhomecontent p {
+		font-size: 13px;
+		font-style:normal;
+		line-height: 18px;
+	}
+	
+	#mainhomecontent2 {
+		margin: 0px 5px 0px 160px; /* negative margin for IE Mac */
+		padding: 0px 10px 30px 0px;
+		position:relative;
+		top: 24px; 
+		z-index: 0;
+	}
+	
+	  *:first-child+html  #mainhomecontent2 {
+	  	margin-top: -28px;
+	}
+	
+	/* Fix IE. Hide from IE Mac \*/
+	* html #mainhomecontent2 {
+		margin: 20px 5px 0px 160px;
+		top: 0px;
+	}
+	/* End */
+	
+	#mainhomecontent2 p {
+		font-size: 13px;
+		font-style:normal;
+		line-height: 18px;
+	}
+	
+	
+	#mainhomeinset {
+		display: none;
+	}
+	
+	/******************************END MAINHOMECONTENT AREA OF PAGE STYLES **********************************/
+
+#mainidbanner {
+	background-image:url(../images/idBanner3.jpg);
+	float: right;
+	height:157px;
+	margin: 0px;
+	padding: 0px;
+	top: 0px;
+	width:600px;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html #mainidbanner {
+	position:relative;
+	top: -3px;
+}
+/* End */
+
+	/******************************MAININTERIORCONTENT AREA OF PAGE STYLES **********************************/
+
+	#maininteriorcontent {
+		margin: 0px 180px 0px 166px;
+		min-height: 420px; /* pushes the footer down on short pages - doesn't work for IE Win) */
+		padding: 0px 20px 20px 0px;
+		position: relative;
+		z-index: 0;
+	}
+	
+	/* Fix IE. Hide from IE Mac \*/
+	* html #maininteriorcontent {
+		margin-top: 10px;
+		padding: 0px 0px 20px 0px;  /* padding needs to go with the width, below */
+		width: 386px; /* needed to fix problem with leftnav indenting maincontent in IE */
+	}
+	/* End */
+	
+	#maininteriorcontent li {
+		line-height:16px;
+	}
+
+	/******************************END MAININTERIORCONTENT AREA OF PAGE STYLES **********************************/
+
+
+	/***************************** RIGHT SIDEBAR STYLES ****************************/
+	
+		#mainright {
+			background-image:  url(../images/rtBg.jpg);
+			background-repeat: no-repeat;
+			float:right;
+			margin: 0px;
+			padding: 0px;
+			top: 0px;
+			width: 180px;
+		}
+		
+		/* Fix IE. Hide from IE Mac \*/
+		* html #mainright {
+			position: relative;
+			top: -3px;
+		}
+		/* End */
+		
+		#mainright p.breadcrumbs {
+			display:none;
+		}
+		
+		#mainright p.quote {
+			color: #666;
+			font-family: Georgia, "Times New Roman", Times, serif;
+			font-size: 14px;
+			font-style: italic;
+			line-height: 22px;
+			padding: 10px 8px 0px 15px;
+		}
+	
+		#mainright p.quoteauthor {
+			color:#666;
+			font-family:Georgia, "Times New Roman", Times, serif;
+			font-size:12px;
+			line-height:18px;
+			padding:0px 25px;
+			text-align:right;
+		}
+		
+	/***************************** END RIGHT SIDEBAR STYLES ****************************/
+
+/****************************** END MAIN CONTENT AREA OF PAGE STYLES **********************************/
+
+p {
+	line-height: 16px;
+	margin-top: 5px;
+}
+
+#searchbox {
+	display: none;
+}
+
+#skip {
+	height: 1px;
+}
+
+#wrapper { /* this is the fixed width element that holds the entire page content */
+	background-color: #fff;
+	margin: 0px auto;
+	padding: 0px;
+	width: 752px;   
+}

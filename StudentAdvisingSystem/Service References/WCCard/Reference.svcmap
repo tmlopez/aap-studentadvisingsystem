@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b9a06be8-6ed9-416c-a3ee-efb62db123da" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ems.csuchico.edu/services/wildcatcardservice/wildcatcard.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WildCatCard3.xsd" MetadataType="Schema" ID="1104d0e2-e865-499d-b515-d0ba23ad1495" SourceId="1" SourceUrl="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?xsd=xsd3" />
+    <MetadataFile FileName="WildCatCard.disco" MetadataType="Disco" ID="6a802275-5aa8-4fa0-a4b4-82f182e2766e" SourceId="1" SourceUrl="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?disco" />
+    <MetadataFile FileName="WildCatCard1.wsdl" MetadataType="Wsdl" ID="82b31169-66a0-4779-a49f-7edbcf378bf3" SourceId="1" SourceUrl="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?wsdl" />
+    <MetadataFile FileName="WildCatCard31.xsd" MetadataType="Schema" ID="c70a91f5-1e2a-401d-a422-83927c131416" SourceId="1" SourceUrl="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?xsd=xsd2" />
+    <MetadataFile FileName="WildCatCard32.xsd" MetadataType="Schema" ID="5a9dad2e-c55e-4705-9a60-0edd37310c92" SourceId="1" SourceUrl="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?xsd=xsd0" />
+    <MetadataFile FileName="WildCatCard33.xsd" MetadataType="Schema" ID="78831e94-70ea-42af-b85b-8330aa51bb42" SourceId="1" SourceUrl="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

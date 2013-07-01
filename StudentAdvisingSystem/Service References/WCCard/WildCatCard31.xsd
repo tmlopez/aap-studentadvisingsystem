@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ImageSize">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Size100x100" />
+      <xs:enumeration value="Size150x150" />
+      <xs:enumeration value="Size200x200" />
+      <xs:enumeration value="Size300x300" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ImageSize" nillable="true" type="tns:ImageSize" />
+  <xs:complexType name="WildCatImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ImageName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WildCatImage" nillable="true" type="tns:WildCatImage" />
+  <xs:complexType name="WildCatCardServiceFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FaultID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaultMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="WildCatCardServiceFault" nillable="true" type="tns:WildCatCardServiceFault" />
+</xs:schema>

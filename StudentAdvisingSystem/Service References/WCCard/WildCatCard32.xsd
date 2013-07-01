@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard/2011/11/01" elementFormDefault="qualified" targetNamespace="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard/2011/11/01" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" />
+  <xs:import schemaLocation="http://ems.csuchico.edu/services/WildCatCardService/WildCatCard.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetWildCatImageAny">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Chico_State_ID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" minOccurs="0" name="Size" type="q1:ImageSize" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWildCatImageAnyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" minOccurs="0" name="GetWildCatImageAnyResult" nillable="true" type="q2:WildCatImage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWildCatImageStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Chico_State_ID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" minOccurs="0" name="Size" type="q3:ImageSize" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWildCatImageStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" minOccurs="0" name="GetWildCatImageStudentResult" nillable="true" type="q4:WildCatImage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWildCatImageFacultyStaff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Chico_State_ID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" minOccurs="0" name="Size" type="q5:ImageSize" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWildCatImageFacultyStaffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/edu.csu.chico.ems.services.WildCatCardService" minOccurs="0" name="GetWildCatImageFacultyStaffResult" nillable="true" type="q6:WildCatImage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChicoStateIdsChgdImgsBtwn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="start_date" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="end_date" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChicoStateIdsChgdImgsBtwnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetChicoStateIdsChgdImgsBtwnResult" nillable="true" type="q7:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChicoStateIdsChgdImgsSince">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="start_date" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetChicoStateIdsChgdImgsSinceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetChicoStateIdsChgdImgsSinceResult" nillable="true" type="q8:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
